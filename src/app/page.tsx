@@ -54,23 +54,25 @@ export default async function Home() {
 
   return (
     <div className="bg-black text-white">
-      <section className="relative min-h-[670px] overflow-hidden border-b border-white/20 bg-zinc-950">
+      <section className="relative min-h-[670px] overflow-hidden border-b border-white/20 bg-black">
         <Image
-          src={heroImage}
-          alt="Cães e gatos"
+          src="/hero.png"
+          alt="Cão e Gato"
           fill
           priority
-          className="object-cover object-center opacity-50 mix-blend-luminosity"
+          className="object-cover object-[75%_top] opacity-85"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent" />
-        <div className="relative mx-auto flex min-h-[670px] max-w-[1440px] items-end px-6 pb-16 sm:px-10 sm:pb-20 lg:px-16">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/50 to-transparent" />
+        <div className="relative mx-auto flex min-h-[670px] max-w-[1440px] items-center px-6 sm:px-10 lg:px-16 pt-20">
           <div className="max-w-2xl text-white">
-            <p className="mb-5 text-[10px] font-semibold uppercase tracking-[0.32em] text-zinc-400">Produtos Selecionados</p>
-            <h1 className="max-w-xl font-serif text-5xl leading-[0.95] tracking-[-0.04em] sm:text-7xl lg:text-[92px]">
-              Tudo para o seu pet.
+            <h1 className="max-w-xl font-serif text-6xl leading-[0.95] tracking-[-0.04em] sm:text-7xl lg:text-[100px]">
+              MiAu<br/><span className="text-accent text-5xl sm:text-6xl lg:text-[80px]">&</span><br/>MiAu
             </h1>
-            <p className="mt-7 max-w-md text-sm leading-6 text-zinc-300 sm:text-base">
-              Acessórios e brinquedos pensados no bem-estar do seu melhor amigo.
+            <p className="mt-5 text-[10px] sm:text-[12px] font-semibold uppercase tracking-[0.32em] text-accent max-w-sm">
+              Transformando metros quadrados em quilômetros de diversão
+            </p>
+            <p className="mt-12 max-w-md text-lg leading-7 text-zinc-300 sm:text-xl font-light">
+              Mais que um petshop.<br/>Uma experiência de <span className="text-accent font-medium">cuidado</span> para o seu pet e <span className="text-accent font-medium">praticidade</span> para você.
             </p>
             <Link
               href="#produtos"
